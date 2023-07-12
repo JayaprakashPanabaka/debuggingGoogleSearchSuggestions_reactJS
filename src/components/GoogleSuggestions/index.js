@@ -54,7 +54,7 @@ class GoogleSuggestions extends Component {
             </div>
             <ul className="suggestions-list">
               {searchResults.map(eachSuggestion => (
-                <suggestionItem
+                <SuggestionItem
                   key={eachSuggestion.id}
                   suggestionDetails={eachSuggestion}
                   updateSearchInput={this.updateSearchInput}
